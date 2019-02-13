@@ -1,0 +1,37 @@
+2@NotNull 不能为null， 但是可以为empty
+@NotEmpty 不能为null，而且长度必须大于0
+@NotBlank 只能作用于String上，不能为null, 而且调用trim()  长度必须大于0  ("test") 必须有实际字符
+
+举例：
+String name = null;
+@NotNull = false;
+@NotEmpty = false;
+@NotBlank = false;
+
+String name = "";
+@NotNull = true;
+@NotEmpty = false;  长度必须大于0为true
+@NoBlank = false  调用trim()之后，必须有实际字符
+
+String name = " ";
+@NotNull = true;
+@NotEmpty = true
+@NotBlank = false
+
+String name = "test andy";
+@NotNull = true
+@NotEmpty = true
+@NotBlank = true
+
+
+
+
+
+
+
+
+
+
+
+
+
