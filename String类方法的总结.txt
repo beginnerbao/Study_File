@@ -38,7 +38,54 @@
 	 * public String toLowerCase() 返回讲当前字符串中所有字符转换成小写
 	 * public String toUpperCase() 返回讲当前字符串中所有字符转换成大写
 	 * 
+	 * 8.字符串中字符的替换
+	 * public String replace(char oldChar, char newChar) 用字符newChar替换当前字符串中的oldChar字符，并返回一个新的字符串
+	 * public String replaceFirst(String regex, String replacement)//该方法用字符replacement的内容替换当前字符串中遇到的第一个和字符串regex相匹配的子串，应将新的字符串返回。
+	 * public String replaceAll(String regex, String replacement)//该方法用字符replacement的内容替换当前字符串中遇到的所有和字符串regex相匹配的子串，应将新的字符串返回。
 	 * 
+	 * 9.String trim() 截去字符串两端的空格，对中间的空格不处理 	  	
+	 * boolean starWith(String prefix)  当前字符串中的起始字符与prefix相同
+	 * boolean endWith(String suffix)   当前字符串中的结束字符与suffix相同
+	 * 
+	 * boolean contains(String str) 参数是否被包含在当前字符串中   返回一个boolean值
+	 * 
+	 * String[] split(String str) 讲str作为分隔符进行字符串分解， 分解后的字符串在字符串数组中返回
+	 * 
+	 * 
+	 * 字符串与基本类型的转换
+	 * 字符串转换成基本类型
+	 * public static byte parseByte(String s);   		Byte.parseByte(String str);
+	 * public static short parseShort(String s);		Short.parse
+	 * public static short parseInt(String s);
+	 * public static long parseLong(String s);
+	 * public static float parseFloat(String s);
+	 * public static dobble parseDobble(String s);
+	 * 
+	 * eg: 
+	 * 	byte b = Byte.parseByte(string);
+		Short.parseShort(string);
+		Integer.parseInt(string);
+		Long.parseLong(string);
+		Double.parseDouble(string);
+	 * 
+	 * 基本类型转换成字符串类型
+	 * public String valueOf(char data[]);
+	 * public String valueOf(char data[], int offset, int count);
+	 * public String valueOf(boolean b);
+	 * public String valueOf(char c);
+	 * public String valueOf(int i);
+	 * public String valueOf(long i);
+	 * public String valueOf(float i);
+	 * public String valueOf(dobble i);	
+	 * 
+	 * eg： String.valueOf(Object args);
+	 * 
+	 * 
+	 * 进制转换
+	 * Long.toBinaryString(long l);
+	 * Long.toOctalString(long l);
+	 * Long.toHexString(long l);
+	 * Long.toString(long l, int p); // p作为任意进制
 	 * 
 	 * 
 	 * 
